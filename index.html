@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcelo Cadenas web31</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <header class="header" id="inicio">
+      <img src="iconos/bx-menu-alt-right.svg" alt="" class="hamburger" />
+      <nav class="menu-navegacion">
+        <a href="#inicio">inicio</a>
+        <a href="#servicio">Servicio</a>
+        <a href="#portafolio">Portfolio</a>
+        <a href="#contacto">Contacto </a>
+      </nav>
+
+      <div class="contenedor head">
+        <h1 class="titulo">Marcelo Cadenas</h1>
+        <p class="copy">
+          Analista Programador informatico, Desarrollo web interactivo
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="contenedor" id="servicio">
+        <h2 class="subtitulo">SERVICIO</h2>
+        <div class="contenedor-servicio">
+          <img src="img/Astronauta1.jpg" alt=" " id="Astronauta1" />
+          <div class="Checklist-servicio">
+            <div class="service">
+              <h3 class="n-service"><span class="number"></span>Diseño Web Responsive</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+                dignissimos sapiente Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Ipsum dignissimos sapiente Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Ipsum dignissimos
+                sapiente<br /><br />
+              </p>
+            </div>
+
+            <div class="service">
+              <h3 class="n-service"><span class="number"></span>Diseño Web Escritorio</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+                dignissimos sapiente Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Ipsum dignissimos sapiente Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Ipsum dignissimos
+                sapiente<br /><br />
+              </p>
+            </div>
+
+            <div class="service">
+              <h3 class="n-service"><span class="number"></span>Diseño Web Mobil</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+                dignissimos sapiente Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Ipsum dignissimos sapiente Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Ipsum dignissimos
+                sapiente<br />
+              </p>
+            </div>
+          </div>
+          <!--Checklist-servicio-->
+        </div>
+        <!--contenedor-servicio-->
+      </section>
+
+      <section class="gallery" id="portafolio">
+        <div class="contenedor"></div>
+        <h2 class="subtitulo">GALERIA DE IMAGENES</h2>
+        <div class="contenedor-galeria">
+          <img src="img/Astronauta5.jpg" class="img-galeria" />
+          <img src="img/astronauta9.jpg" class="img-galeria" />
+          <img src="img/astronauta7.jpg" class="img-galeria" />
+          <img src="img/astronauta8.avif" class="img-galeria" />
+          <img src="img/astronauta4.jpg" class="img-galeria" />
+          <img src="img/astronauta3.webp" class="img-galeria" />
+        </div>
+      </section>
+
+      <section class="image-light">
+        <img src="iconos/bx-x.svg" class="close" />
+        <img src="img/1.jpg" class="agregar-imagen" />
+      </section>
+    </main>
+
+    <div class="contacto" id="contacto">
+      <p class="contacto2"> CONTACTO</p>     
+      <form action="" class="formulario">
+        <div class="row">
+          <label class="required" for="name">NOMBRE:</label><br />
+          <input  id="name" class="input"  name="name"   type="text" value=""  size="31"/><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="email">CORREO ELECTRONICO:</label><br />
+          <input
+            id="email" class="input"  name="email"   type="text"  value=""  size="31"  /><br />          
+         
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="message">SU MENSAJE:</label><br />
+          <textarea id="message" class="input"  name="message" rows="7"cols="30"></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+
+        <input  class="btn" id="submit_button" type="submit" value="ENVIAR MENSAJE" />
+      </form>
+    </div>
+
+    <footer></footer>
+    <script src="js/galeria.js"></script>
+    <script src="js/intro.js"></script>
+  </body>
+</html>
